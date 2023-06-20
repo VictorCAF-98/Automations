@@ -22,7 +22,7 @@ if '%errorlevel%' NEQ '0' (
 
 ::-------------------------------------
 :ChgIP
-    netsh interface ip set address "ethernet" static 192.168.1.25 255.255.0.0 > sts.tmp
-    timeout 5 > nul
+    netsh interface ip set address "ethernet" static 172.16.1.99 255.255.0.0
+    timeout 5 > NUL
     ipconfig
     PAUSE
